@@ -11,7 +11,8 @@ releases:
       - updated MANIFEST
       - updated t/perlcriticrc
       - "Makefile.PL now requires perl_version 5.008 - charname 'TURNED AMPERSAND' doesn't exist in 5.6.2"
-    date: 2007-11-24T17:24:43Z
+      - '.shipit: fixed svk.tagpattern'
+    date: 2008-05-29T12:09:08Z
     tags:
       - NEWFEATURE
     version: 0.02
