@@ -1,6 +1,6 @@
-steps = ApplyYAMLChangeLogVersion, Manifest, DistTest, Commit, Tag, MakeDist, MyUploadCPAN, DistClean, Twitter
+steps = FindVersion, ChangeVersion, CheckChangeLog, Manifest, DistTest, Commit, Tag, MakeDist, MyUploadCPAN, DistClean, Twitter
 
-svk.tagpattern = //local/coderepos/Text-UpsideDown/tags/Text-UpsideDown-%v
+svn.tagpattern = http://svn.coderepos.org/share/lang/perl/Text-UpsideDown/tags/Text-UpsideDown-%v
 
 twitter.config = ~/.twitterrc
 twitter.distname = Text-UpsideDown

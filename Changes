@@ -1,24 +1,16 @@
----
-global:
-  name: Text-UpsideDown
-releases:
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - Converted Changes file to YAML style
-      - '.shipit: added Twitter step'
-      - 'Makefile.PL: added auto_install() and process_templates()'
-      - 'lib/*: converted to template'
-      - updated MANIFEST
-      - updated t/perlcriticrc
-      - "Makefile.PL now requires perl_version 5.008 - charname 'TURNED AMPERSAND' doesn't exist in 5.6.2"
-      - '.shipit: fixed svk.tagpattern'
-    date: 2008-05-29T12:09:08Z
-    tags:
-      - NEWFEATURE
-    version: 0.02
-  - author: 'Marcel Gruenauer <marcel@cpan.org>'
-    changes:
-      - original version
-    date: 2007-11-02T11:41:24+01:00
-    tags: []
-    version: 0.01
+Revision history for Perl extension Text-UpsideDown
+
+0.02  Thu, 29 May 2008 12:09:08 -0000 (Marcel Gruenauer <marcel@cpan.org>)
+     - Converted Changes file to YAML style
+     - .shipit: added Twitter step
+     - Makefile.PL: added auto_install() and process_templates()
+     - lib/*: converted to template
+     - updated MANIFEST
+     - updated t/perlcriticrc
+     - Makefile.PL now requires perl_version 5.008 - charname 'TURNED
+       AMPERSAND' doesn't exist in 5.6.2
+     - .shipit: fixed svk.tagpattern
+     - tags: NEWFEATURE
+
+0.01  Fri, 02 Nov 2007 11:41:24 +0100 (Marcel Gruenauer <marcel@cpan.org>)
+     - original version
