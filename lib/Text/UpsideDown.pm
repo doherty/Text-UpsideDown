@@ -6,7 +6,7 @@ use charnames ':full';
 use base 'Exporter';
 
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 
 our @EXPORT = ('upside_down');
