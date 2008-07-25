@@ -1,5 +1,10 @@
 Revision history for Perl extension Text-UpsideDown
 
+0.03  Thu Jul 25 15:27:43 CEST 2008 (Marcel Gruenauer <marcel@cpan.org>)
+     - Changed dist style and Changes back to standard. People didn't like it -
+       the nail that sticks out gets hammered down.
+     - Added standard test files; this will also help with CPANTS.
+
 0.02  Thu, 29 May 2008 12:09:08 -0000 (Marcel Gruenauer <marcel@cpan.org>)
      - Converted Changes file to YAML style
      - .shipit: added Twitter step
