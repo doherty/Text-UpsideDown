@@ -95,7 +95,7 @@ __END__
 
 =head1 NAME
 
-Text::UpsideDown - flip text upside-down using Unicode
+Text::UpsideDown - Flip text upside-down using Unicode
 
 =head1 SYNOPSIS
 
