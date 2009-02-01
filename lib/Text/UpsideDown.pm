@@ -108,7 +108,7 @@ This module exports only one function:
 
 =over 4
 
-=item upside_down
+=item C<upside_down>
 
 Takes a string and returns a string that looks like the characters have been
 turned upside-down and reversed so it could be read by turning your head
