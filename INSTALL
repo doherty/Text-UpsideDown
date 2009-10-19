@@ -1,0 +1,27 @@
+This is the Perl module Text::UpsideDown.
+
+## Installation
+
+Text::UpsideDown installation is straightforward. If your CPAN shell is set up,
+you should just be able to do
+
+    % cpan Text::UpsideDown
+
+Download it, unpack it, then build it as per the usual:
+
+    % perl Makefile.PL
+    % make && make test
+
+Then install it:
+
+    % make install
+
+## Documentation
+
+Text::UpsideDown documentation is available as in POD. So you can do:
+
+    % perldoc Text::UpsideDown
+
+to read the documentation online with your favorite pager.
+
+Marcel Gruenauer
