@@ -3,7 +3,7 @@ use 5.008;
 use warnings;
 use strict;
 use charnames ':full';
-use base 'Exporter';
+use Exporter qw(import);
 our $VERSION = '0.03';
 our @EXPORT  = ('upside_down');
 
@@ -82,8 +82,6 @@ sub upside_down {
 1;
 __END__
 
-
-
 =head1 NAME
 
 Text::UpsideDown - Flip text upside-down using Unicode
@@ -135,7 +133,6 @@ Copyright 2007-2009 by the authors.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
-
 
 =cut
 

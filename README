@@ -1,27 +1,41 @@
-This is the Perl module Text::UpsideDown.
+NAME
+    Text::UpsideDown - Flip text upside-down using Unicode
 
-## Installation
+SYNOPSIS
+        use Text::UpsideDown;
+        print upside_down("marcel gruenauer");
 
-Text::UpsideDown installation is straightforward. If your CPAN shell is set up,
-you should just be able to do
+DESCRIPTION
+    This module exports only one function:
 
-    % cpan Text::UpsideDown
+    "upside_down"
+        Takes a string and returns a string that looks like the characters
+        have been turned upside-down and reversed so it could be read by
+        turning your head upside-down. It uses special Unicode characters
+        originally intended for mathematics and the like.
 
-Download it, unpack it, then build it as per the usual:
+BUGS AND LIMITATIONS
+    No bugs have been reported.
 
-    % perl Makefile.PL
-    % make && make test
+    Please report any bugs or feature requests through the web interface at
+    <http://rt.cpan.org>.
 
-Then install it:
+INSTALLATION
+    See perlmodinstall for information and options on installing Perl
+    modules.
 
-    % make install
+AVAILABILITY
+    The latest version of this module is available from the Comprehensive
+    Perl Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a
+    CPAN site near you. Or see
+    <http://search.cpan.org/dist/Text-UpsideDown/>.
 
-## Documentation
+AUTHORS
+    Marcel Grünauer, "<marcel@cpan.org>"
 
-Text::UpsideDown documentation is available as in POD. So you can do:
+COPYRIGHT AND LICENSE
+    Copyright 2007-2009 by the authors.
 
-    % perldoc Text::UpsideDown
+    This library is free software; you can redistribute it and/or modify it
+    under the same terms as Perl itself.
 
-to read the documentation online with your favorite pager.
-
-Marcel Gruenauer
