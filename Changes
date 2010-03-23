@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.100820  2010-03-23 17:53:38 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
 
 0.03  Wed 2010.02.10 16:19:01 CET (Marcel Gruenauer <marcel@cpan.org>)
