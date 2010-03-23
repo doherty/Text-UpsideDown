@@ -1,4 +1,7 @@
-Revision history for Perl extension Text-UpsideDown
+Revision history for Perl extension {{$dist->name}}
+
+{{$NEXT}}
+    - converted the distribution to Dist::Zilla-style
 
 0.03  Wed 2010.02.10 16:19:01 CET (Marcel Gruenauer <marcel@cpan.org>)
      - Changed dist style and Changes back to standard. People didn't like it -

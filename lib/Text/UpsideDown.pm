@@ -1,10 +1,11 @@
-package Text::UpsideDown;
 use 5.008;
-use warnings;
 use strict;
+use warnings;
+
+package Text::UpsideDown;
+# ABSTRACT: Flip text upside-down using Unicode
 use charnames ':full';
 use Exporter qw(import);
-our $VERSION = '0.03';
 our @EXPORT  = ('upside_down');
 
 # mapping taken from
@@ -80,11 +81,6 @@ sub upside_down {
     join '' => reverse split '', $text;
 }
 1;
-__END__
-
-=head1 NAME
-
-Text::UpsideDown - Flip text upside-down using Unicode
 
 =head1 SYNOPSIS
 
@@ -93,46 +89,11 @@ Text::UpsideDown - Flip text upside-down using Unicode
 
 =head1 DESCRIPTION
 
-This module exports only one function:
+This module exports only one function.
 
-=over 4
-
-=item C<upside_down>
+=function upside_down
 
 Takes a string and returns a string that looks like the characters have been
 turned upside-down and reversed so it could be read by turning your head
 upside-down. It uses special Unicode characters originally intended for
 mathematics and the like.
-
-=back
-
-=head1 BUGS AND LIMITATIONS
-
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
-
-=head1 INSTALLATION
-
-See perlmodinstall for information and options on installing Perl modules.
-
-=head1 AVAILABILITY
-
-The latest version of this module is available from the Comprehensive Perl
-Archive Network (CPAN). Visit <http://www.perl.com/CPAN/> to find a CPAN
-site near you. Or see L<http://search.cpan.org/dist/Text-UpsideDown/>.
-
-=head1 AUTHORS
-
-Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
-
-=head1 COPYRIGHT AND LICENSE
-
-Copyright 2007-2009 by the authors.
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
-=cut
-
