@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Added a simple command line script for epic justice [doherty@cpan.org++]
 
 1.100820  2010-03-23 17:53:38 Europe/Vienna
     - converted the distribution to Dist::Zilla-style
