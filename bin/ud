@@ -1,0 +1,77 @@
+#!/usr/bin/env perl
+use 5.008;
+use strict;
+use warnings;
+
+# PODNAME: ud
+# ABSTRACT: print your text Upside Down
+# VERSION
+
+use Text::UpsideDown qw(upside_down);
+use Getopt::Long qw(GetOptions);
+use Pod::Usage qw(pod2usage);
+use open qw(:std :encoding(UTF-8));
+use utf8;
+
+=encoding utf-8
+
+=head1 SYNOPSIS
+
+    $ ud hello
+    oʃʃǝɥ
+    $ ud
+    hello
+    world
+    
+    pʃɹoʍ
+    oʃʃǝɥ
+
+=for test_synopsis
+1;
+__END__
+
+=head1 DESCRIPTION
+
+If you provide text as command line arguments, they'll be printed
+back to you, upside down.
+
+If you don't, input is expected on STDIN, and will be turned
+upside down when EOF is reached.
+
+=head2 Options
+
+=over 4
+
+=item B<--help>
+
+Print this manpage and exit.
+
+=item B<--version>
+
+Print the version number.
+
+=back
+
+=cut
+
+my %opts = ();
+GetOptions(\%opts,
+    'help',
+    'version',
+) or pod2usage(-verbose => 2, -output => *STDERR);
+pod2usage(-verbose => 2, -output => *STDOUT) if $opts{help};
+if ($opts{version}) {
+    print __PACKAGE__->VERSION ? __PACKAGE__->VERSION : 'dev';
+    exit;
+}
+
+if (@ARGV) {
+    print upside_down("@ARGV\n"), "\n";
+}
+else {
+    my $text = '';
+    while (<STDIN>) {
+        $text .= $_;
+    }
+    print upside_down($text), "\n";
+}
