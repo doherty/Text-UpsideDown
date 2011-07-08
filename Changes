@@ -1,17 +1,17 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - Added a simple command line script for epic justice [doherty@cpan.org++]
+    - Added a simple command line script (Mike doherty <doherty@cpan.org>)
 
-1.100820  2010-03-23 17:53:38 Europe/Vienna
+1.100820    2010-03-03
     - converted the distribution to Dist::Zilla-style
 
-0.03  Wed 2010.02.10 16:19:01 CET (Marcel Gruenauer <marcel@cpan.org>)
+0.03        2010-01-10
      - Changed dist style and Changes back to standard. People didn't like it -
        the nail that sticks out gets hammered down.
      - Added standard test files; this will also help with CPANTS.
 
-0.02  Thu, 29 May 2008 12:09:08 -0000 (Marcel Gruenauer <marcel@cpan.org>)
+0.02        2008-05-29
      - Converted Changes file to YAML style
      - .shipit: added Twitter step
      - Makefile.PL: added auto_install() and process_templates()
@@ -23,5 +23,5 @@ Revision history for Perl extension {{$dist->name}}
      - .shipit: fixed svk.tagpattern
      - tags: NEWFEATURE
 
-0.01  Fri, 02 Nov 2007 11:41:24 +0100 (Marcel Gruenauer <marcel@cpan.org>)
+0.01        2007-11-02
      - original version
