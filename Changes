@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.11_1    2011-07-07
     - Added a simple command line script
     - Added a couple better upside-down conversions
 
