@@ -1,7 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
-    - Added a simple command line script (Mike doherty <doherty@cpan.org>)
+    - Added a simple command line script
+    - Added a couple better upside-down conversions
 
 1.100820    2010-03-03
     - converted the distribution to Dist::Zilla-style

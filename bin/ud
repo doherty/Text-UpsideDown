@@ -59,7 +59,7 @@ GetOptions(\%opts,
     'help',
     'version',
 ) or pod2usage(-verbose => 2, -output => *STDERR);
-pod2usage(-verbose => 2, -output => *STDOUT) if $opts{help};
+pod2usage(-verbose => 2) if $opts{help};
 if ($opts{version}) {
     print __PACKAGE__->VERSION ? __PACKAGE__->VERSION : 'dev';
     exit;
