@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Use W/M as inversions to avoid bumping perl version required
 
 1.11_1    2011-07-07
     - Added a simple command line script
