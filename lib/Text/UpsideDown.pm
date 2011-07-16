@@ -104,7 +104,7 @@ mathematics and the like.
 sub upside_down {
     my $text = shift;
     $text =~ s/(.)/ exists $upside_down_map{$1} ? $upside_down_map{$1} : $1/ge;
-    join '' => reverse split '', $text;
+    scalar reverse $text;
 }
 
 1;
