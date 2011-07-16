@@ -103,8 +103,10 @@ mathematics and the like.
 
 sub upside_down {
     my $text = shift;
-    $text =~ s/(.)/ exists $upside_down_map{$1} ? $upside_down_map{$1} : $1/ge;
-    join '' => reverse split '', $text;
+    my $rx = sprintf '[%s]', quotemeta join '', keys %upside_down_map;
+    $rx = qr/($rx)/;
+    $text =~ s/$rx/$upside_down_map{$1}/g;
+    scalar reverse $text;
 }
 
 1;
