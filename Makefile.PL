@@ -14,10 +14,12 @@ my %WriteMakefileArgs = (
   'BUILD_REQUIRES' => {
     'File::Find' => '0',
     'File::Temp' => '0',
+    'Module::Build' => '0.3601',
     'Test::More' => '0'
   },
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+    'ExtUtils::MakeMaker' => '6.30',
+    'Module::Build' => '0.3601'
   },
   'DISTNAME' => 'Text-UpsideDown',
   'EXE_FILES' => [
@@ -33,7 +35,7 @@ my %WriteMakefileArgs = (
     'open' => '0',
     'utf8' => '0'
   },
-  'VERSION' => '1.11_1',
+  'VERSION' => '1.11_2',
   'test' => {
     'TESTS' => 't/*.t'
   }
