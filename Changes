@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Speed enhancements [Aristotle Pagaltzis]
 
 1.11_2    2011-07-15
     - Use W/M as inversions to avoid bumping perl version required
