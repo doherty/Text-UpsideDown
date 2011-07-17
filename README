@@ -2,7 +2,7 @@ NAME
     Text::UpsideDown - Flip text upside-down using Unicode
 
 VERSION
-    version 1.11_2
+    version 1.11_3
 
 SYNOPSIS
         use Text::UpsideDown;

@@ -22,7 +22,7 @@ my %module_build_args = (
     'Marcel Grünauer <marcel@cpan.org>'
   ],
   'dist_name' => 'Text-UpsideDown',
-  'dist_version' => '1.11_2',
+  'dist_version' => '1.11_3',
   'license' => 'perl',
   'module_name' => 'Text::UpsideDown',
   'recommends' => {},
