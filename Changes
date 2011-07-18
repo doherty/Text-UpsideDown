@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Better use of tr///, thanks to Aristotle again
 
 1.11_3    2011-07-17
     - Speed enhancements [Aristotle Pagaltzis]
