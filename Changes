@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.20      2011-07-18
     - Better use of tr///, thanks to Aristotle again
 
 1.11_3    2011-07-17
