@@ -1,6 +1,7 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+    - Fix test suite for Windows
 
 1.20      2011-07-18
     - Better use of tr///, thanks to Aristotle again

@@ -17,7 +17,7 @@ note 'upside down args'; {
 }
 
 note 'stdin'; {
-    my $ud = `echo 'hello' | $^X bin/ud 2>&1`;
+    my $ud = `echo hello | $^X bin/ud 2>&1`;
     $ud =~ s/^\n|\n$//g; # trim
 
     is
