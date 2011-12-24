@@ -9,35 +9,37 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'Flip text upside-down using Unicode',
-  'AUTHOR' => 'Mike Doherty <doherty@cpan.org>, Marcel Grünauer <marcel@cpan.org>',
-  'BUILD_REQUIRES' => {
-    'File::Find' => '0',
-    'File::Temp' => '0',
-    'Module::Build' => '0.3601',
-    'Test::More' => '0'
+  "ABSTRACT" => "Flip text upside-down using Unicode",
+  "AUTHOR" => "Mike Doherty <doherty\@cpan.org>, Marcel Gr\303\274nauer <marcel\@cpan.org>",
+  "BUILD_REQUIRES" => {
+    "File::Find" => 0,
+    "File::Temp" => 0,
+    "Module::Build" => "0.3601",
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30',
-    'Module::Build' => '0.3601'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30",
+    "Module::Build" => "0.3601"
   },
-  'DISTNAME' => 'Text-UpsideDown',
-  'EXE_FILES' => [
-    'bin/ud'
+  "DISTNAME" => "Text-UpsideDown",
+  "EXE_FILES" => [
+    "bin/ud"
   ],
-  'LICENSE' => 'perl',
-  'NAME' => 'Text::UpsideDown',
-  'PREREQ_PM' => {
-    'Exporter' => '0',
-    'Getopt::Long' => '0',
-    'Pod::Usage' => '0',
-    'charnames' => '0',
-    'open' => '0',
-    'utf8' => '0'
+  "LICENSE" => "perl",
+  "NAME" => "Text::UpsideDown",
+  "PREREQ_PM" => {
+    "Exporter" => 0,
+    "Getopt::Long" => 0,
+    "Pod::Usage" => 0,
+    "charnames" => 0,
+    "open" => 0,
+    "strict" => 0,
+    "utf8" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '1.20',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "1.20_1",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
