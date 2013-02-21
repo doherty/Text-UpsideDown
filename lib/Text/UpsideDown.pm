@@ -70,7 +70,6 @@ our %upside_down_map = (
     '&' => "\N{TURNED AMPERSAND}",
     q{'} => ',',
     '.' => "\N{DOT ABOVE}",
-    '/' => '\\',
     '^' => "\N{LOGICAL OR}",
     '*' => "\N{LOW ASTERISK}",
     '1' => "\N{DOWNWARDS HARPOON WITH BARB RIGHTWARDS}",
