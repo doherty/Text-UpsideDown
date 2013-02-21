@@ -18,7 +18,6 @@ my %WriteMakefileArgs = (
     "Test::More" => 0
   },
   "CONFIGURE_REQUIRES" => {
-    "ExtUtils::MakeMaker" => "6.30",
     "Module::Build" => "0.3601"
   },
   "DISTNAME" => "Text-UpsideDown",
@@ -37,7 +36,7 @@ my %WriteMakefileArgs = (
     "utf8" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.20_1",
+  "VERSION" => "1.21",
   "test" => {
     "TESTS" => "t/*.t"
   }

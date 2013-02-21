@@ -13,7 +13,6 @@ my %module_build_args = (
     "Test::More" => 0
   },
   "configure_requires" => {
-    "ExtUtils::MakeMaker" => "6.30",
     "Module::Build" => "0.3601"
   },
   "dist_abstract" => "Flip text upside-down using Unicode",
@@ -22,7 +21,7 @@ my %module_build_args = (
     "Marcel Gr\303\274nauer <marcel\@cpan.org>"
   ],
   "dist_name" => "Text-UpsideDown",
-  "dist_version" => "1.20_1",
+  "dist_version" => "1.21",
   "license" => "perl",
   "module_name" => "Text::UpsideDown",
   "recommends" => {},
