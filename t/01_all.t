@@ -1,9 +1,10 @@
-#!/usr/bin/env perl
-use warnings;
 use strict;
+use warnings;
 use Text::UpsideDown;
 use Test::More tests => 2;
+
 my @test = %Text::UpsideDown::upside_down_map;
+
 my ($orig_str, $expect_str) = ('', '');
 while (my ($orig, $new) = splice(@test, 0, 2)) {
     $orig_str .= $orig;

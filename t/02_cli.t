@@ -1,27 +1,26 @@
-#!/usr/bin/env perl
 use strict;
 use warnings;
 use utf8;
 use open qw(:std :encoding(UTF-8));
 use Text::UpsideDown;
+use IPC::Run3;
+use File::Spec;
 use Test::More tests => 2;
 
-note 'upside down args'; {
-    my $ud = qx{$^X bin/ud hello};
-    $ud =~ s/^\n|\n$//g; #trim
+my $script = File::Spec->catfile(qw/ bin ud /);
+my $salutation = 'hello';
+my $response = qr/oʃʃǝɥ/;
 
-    is
-        $ud,
-        'oʃʃǝɥ',
-        'upside down on command line';
-}
+subtest 'arg' => sub {
+    plan tests => 2;
+    run3 [$script, $salutation], \undef, \my $out, \my $err, +{ binmode_stdout => ':encoding(UTF-8)' };
+    like $out => $response;
+    is $err => '';
+};
 
-note 'stdin'; {
-    my $ud = `echo hello | $^X bin/ud 2>&1`;
-    $ud =~ s/^\n|\n$//g; # trim
-
-    is
-        $ud,
-        'oʃʃǝɥ',
-        'upside down on stdin';
-}
+subtest 'stdin' => sub {
+    plan tests => 2;
+    run3 [$script], \$salutation, \my $out, \my $err, +{ binmode_stdout => ':encoding(UTF-8)' };
+    like $out => $response;
+    is $err => '';
+};

@@ -57,17 +57,5 @@
 ^MYMETA\.
 #!end included /home/mike/perl5/perlbrew/perls/perl-5.16.2/lib/5.16.2/ExtUtils/MANIFEST.SKIP
 
-# Avoid configuration metadata file
-^MYMETA\.
-
-# Avoid Module::Build generated and utility files.
-\bBuild$
-\bBuild.bat$
-\b_build
-\bBuild.COM$
-\bBUILD.COM$
-\bbuild.com$
-^MANIFEST\.SKIP
-
 # Avoid archives of this distribution
 \bText-UpsideDown-[\d\.\_]+
