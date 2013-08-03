@@ -7,10 +7,7 @@ use Module::Build 0.3601;
 
 my %module_build_args = (
   "build_requires" => {
-    "File::Find" => 0,
-    "File::Temp" => 0,
-    "Module::Build" => "0.3601",
-    "Test::More" => 0
+    "Module::Build" => "0.3601"
   },
   "configure_requires" => {
     "Module::Build" => "0.3601"
@@ -21,7 +18,7 @@ my %module_build_args = (
     "Marcel Gr\303\274nauer <marcel\@cpan.org>"
   ],
   "dist_name" => "Text-UpsideDown",
-  "dist_version" => "1.21",
+  "dist_version" => "1.22",
   "license" => "perl",
   "module_name" => "Text::UpsideDown",
   "recommends" => {},
@@ -39,9 +36,29 @@ my %module_build_args = (
   },
   "script_files" => [
     "bin/ud"
-  ]
+  ],
+  "test_requires" => {
+    "Capture::Tiny" => 0,
+    "File::Spec" => 0,
+    "IPC::Run3" => 0,
+    "Test::More" => "0.88",
+    "Test::Script" => "1.05"
+  }
 );
 
+
+unless ( eval { Module::Build->VERSION(0.4004) } ) {
+  my $tr = delete $module_build_args{test_requires};
+  my $br = $module_build_args{build_requires};
+  for my $mod ( keys %$tr ) {
+    if ( exists $br->{$mod} ) {
+      $br->{$mod} = $tr->{$mod} if $tr->{$mod} > $br->{$mod};
+    }
+    else {
+      $br->{$mod} = $tr->{$mod};
+    }
+  }
+}
 
 my $build = Module::Build->new(%module_build_args);
 

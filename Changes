@@ -1,6 +1,8 @@
 Revision history for Perl extension {{$dist->name}}
 
 {{$NEXT}}
+
+1.22      2013-08-02
   - Fix Win32 test failures, hopefully
 
 1.21      2013-02-21
